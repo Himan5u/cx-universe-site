@@ -1,78 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services | CX Universe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CX Universe - Services</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #0c0c0c;
-      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
     }
+
     header {
-      background-color: #121212;
-      padding: 20px;
+      background: #121212;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00ffee;
+      text-shadow: 0 0 10px #00ffee;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffee;
+    }
+
+    .container {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
       text-align: center;
+      font-size: 42px;
+      margin-bottom: 40px;
+      color: #00ffee;
+      text-shadow: 0 0 10px #00ffee;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    .services-container {
-      padding: 40px;
+
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
-    .service-card {
-      background-color: #1e1e1e;
+
+    .service {
+      background: #111;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #00ffff40;
-      transition: transform 0.2s;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #222;
     }
-    .service-card:hover {
+
+    .service:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffee88;
     }
-    .service-card h3 {
-      margin-top: 0;
-      color: #00ffff;
+
+    .service h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #00ffee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #888;
+      font-size: 16px;
+      margin-top: 60px;
+    }
+
+    footer span {
+      color: #00ffee;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00ffee;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>AI Services by CX Universe</h1>
-  <p>Explore 50+ futuristic AI-powered solutions</p>
-</header>
+  <header>
+    <div class="logo">CX Universe</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-<div class="services-container">
-  <div class="service-card"><h3>AI Policy Generation</h3><p>Create custom AI policies for businesses and websites.</p></div>
-  <div class="service-card"><h3>AI Law Assistant</h3><p>Legal AI chatbot for quick case analysis and support.</p></div>
-  <div class="service-card"><h3>AI E-commerce Helper</h3><p>AI-driven product descriptions, pricing, and marketing copy.</p></div>
-  <div class="service-card"><h3>AI Astrology</h3><p>Generate accurate astrology charts, predictions, and remedies.</p></div>
-  <div class="service-card"><h3>AI Resume Builder</h3><p>Create professional resumes optimized with AI algorithms.</p></div>
-  <div class="service-card"><h3>AI Education Tutor</h3><p>Personalized learning assistant for students and professionals.</p></div>
-  <div class="service-card"><h3>AI Interview Coach</h3><p>Mock interviews and feedback using AI simulations.</p></div>
-  <div class="service-card"><h3>AI Content Creator</h3><p>Generate articles, blog posts, and marketing content instantly.</p></div>
-  <div class="service-card"><h3>AI Voiceovers</h3><p>Create realistic voiceovers for videos and ads.</p></div>
-  <div class="service-card"><h3>AI Image Editing</h3><p>Remove backgrounds, enhance images, and apply filters.</p></div>
-  <div class="service-card"><h3>AI Video Generator</h3><p>Create AI-generated short videos or reels from text.</p></div>
-  <div class="service-card"><h3>AI Portfolio Maker</h3><p>Design professional online portfolios using AI templates.</p></div>
-  <div class="service-card"><h3>AI Domain Name Ideas</h3><p>Smart AI to generate business & domain name ideas.</p></div>
-  <div class="service-card"><h3>AI Logo Designer</h3><p>Instant logo designs based on brand personality.</p></div>
-  <div class="service-card"><h3>AI Email Generator</h3><p>Professional email drafts in seconds with tone control.</p></div>
-  <div class="service-card"><h3>AI Business Ideas</h3><p>AI that helps brainstorm and validate business ideas.</p></div>
-  <div class="service-card"><h3>AI Business Name Generator</h3><p>Unique brand names based on your niche.</p></div>
-  <div class="service-card"><h3>AI Meme Generator</h3><p>Create trending memes with custom inputs.</p></div>
-  <div class="service-card"><h3>AI Code Debugger</h3><p>Fix programming bugs using AI suggestions.</p></div>
-  <div class="service-card"><h3>AI Translator</h3><p>Real-time text and voice translation with context.</p></div>
-  <!-- You can add more like this -->
-</div>
+  <div class="container">
+    <h1>Our AI-Powered Services</h1>
+    <div class="grid">
+      <div class="service"><h3>AI Policy Making</h3></div>
+      <div class="service"><h3>AI Law & Compliance</h3></div>
+      <div class="service"><h3>AI Ecommerce Solutions</h3></div>
+      <div class="service"><h3>AI Astrology Reports</h3></div>
+      <div class="service"><h3>AI-Powered Education Tools</h3></div>
+      <div class="service"><h3>AI Resume Builder</h3></div>
+      <div class="service"><h3>AI Trading Bots</h3></div>
+      <div class="service"><h3>AI Voice Cloning</h3></div>
+      <div class="service"><h3>AI Content Creation</h3></div>
+      <div class="service"><h3>AI Chatbots for Business</h3></div>
+      <div class="service"><h3>AI Health Prediction</h3></div>
+      <div class="service"><h3>AI Image Generation</h3></div>
+      <div class="service"><h3>AI Video Editing</h3></div>
+      <div class="service"><h3>AI Customer Support</h3></div>
+      <div class="service"><h3>AI Digital Marketing</h3></div>
+      <div class="service"><h3>AI Code Generation</h3></div>
+      <div class="service"><h3>AI SEO Tools</h3></div>
+      <div class="service"><h3>AI Email Writer</h3></div>
+      <div class="service"><h3>AI Meme Generator</h3></div>
+      <div class="service"><h3>AI Music Composer</h3></div>
+      <div class="service"><h3>AI Face Swapping</h3></div>
+      <div class="service"><h3>AI Game Development</h3></div>
+      <div class="service"><h3>AI Startup Idea Generator</h3></div>
+      <div class="service"><h3>AI Legal Document Generator</h3></div>
+      <div class="service"><h3>AI Storytelling</h3></div>
+      <div class="service"><h3>AI Job Interview Prep</h3></div>
+      <div class="service"><h3>AI Logo Generator</h3></div>
+      <div class="service"><h3>AI Web Design</h3></div>
+      <div class="service"><h3>AI Ad Copywriting</h3></div>
+      <div class="service"><h3>AI Product Description Generator</h3></div>
+      <div class="service"><h3>AI HR Assistant</h3></div>
+      <div class="service"><h3>AI Financial Planning</h3></div>
+      <div class="service"><h3>AI Business Naming</h3></div>
+      <div class="service"><h3>AI Resume Analyzer</h3></div>
+      <div class="service"><h3>AI Daily Planner</h3></div>
+      <div class="service"><h3>AI News Summarizer</h3></div>
+      <div class="service"><h3>AI Caption Creator</h3></div>
+      <div class="service"><h3>AI Instagram Manager</h3></div>
+      <div class="service"><h3>AI Influencer Bot</h3></div>
+      <div class="service"><h3>AI Presentation Generator</h3></div>
+      <div class="service"><h3>AI Research Assistant</h3></div>
+      <div class="service"><h3>AI CV Optimizer</h3></div>
+      <div class="service"><h3>AI Wedding Planning</h3></div>
+      <div class="service"><h3>AI Branding Strategy</h3></div>
+      <div class="service"><h3>AI UX Researcher</h3></div>
+      <div class="service"><h3>AI Virtual Assistant</h3></div>
+      <div class="service"><h3>AI SMS Campaigns</h3></div>
+      <div class="service"><h3>AI Email Campaigns</h3></div>
+    </div>
+  </div>
+
+  <footer>
+    Powered by <span>CX Universe 🚀</span>
+  </footer>
 
 </body>
 </html>
+
