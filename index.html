@@ -3,82 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to CX Universe</title>
+  <title>CX Universe</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle, #0d0d0d, #000000);
+      color: #ffffff;
+      overflow-x: hidden;
     }
 
-    nav {
-      background-color: #1f2937;
-      padding: 15px 30px;
+    header {
+      background: #121212;
       display: flex;
-      justify-content: flex-end;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00ffee;
+      text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
     }
 
     nav a {
-      color: white;
+      margin-left: 25px;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
+      color: #ccc;
+      font-size: 18px;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #38bdf8;
+      color: #00ffee;
     }
 
-    .main-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .hero {
       text-align: center;
-      padding: 40px 20px;
+      padding: 120px 30px;
     }
 
-    h1 {
-      font-size: 3rem;
+    .hero h1 {
+      font-size: 60px;
+      color: #00ffee;
+      text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
       margin-bottom: 20px;
-      color: #38bdf8;
     }
 
-    p {
-      font-size: 1.3rem;
-      max-width: 800px;
-      color: #cbd5e1;
+    .hero p {
+      font-size: 24px;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
     }
 
     footer {
-      background-color: #1f2937;
-      color: #94a3b8;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 30px;
+      background: #111;
+      color: #888;
+      font-size: 16px;
+      border-top: 1px solid #333;
+      margin-top: 50px;
+    }
+
+    footer span {
+      color: #00ffee;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00ffee;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-  </nav>
 
-  <div class="main-content">
+  <header>
+    <div class="logo">CX Universe</div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <div class="hero">
     <h1>Welcome to CX Universe</h1>
-    <p>The Empire of Limitless Digital Power — Unleashing AI Potential Across Every Dimension.</p>
+    <p>The Empire of Limitless Digital Power</p>
   </div>
 
   <footer>
-    🚀 Powered by <strong>CX Universe</strong> | Crafted for the Future
+    Powered by <span>CX Universe 🚀</span>
   </footer>
+
 </body>
 </html>
