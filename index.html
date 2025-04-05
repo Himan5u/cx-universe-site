@@ -2,85 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CX Universe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #0f0f0f;
-      color: #fff;
-    }
-    nav {
-      background-color: #111;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-around;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #333;
-    }
-    nav a {
-      color: #00ffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
       text-align: center;
+      height: 100vh;
+      overflow: hidden;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 3em;
+      margin-top: 100px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #00f0ff;
     }
     p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #ddd;
     }
-    .section-dark {
-      background-color: #1a1a1a;
+    .nav {
+      margin-top: 50px;
     }
-    .section-light {
-      background-color: #222;
+    .nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #00f0ff;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
+    }
+    .nav a:hover {
+      background-color: #00c4d6;
+      box-shadow: 0 6px 20px rgba(0, 240, 255, 0.5);
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home" class="section-dark">
-    <h1>Welcome to CX Universe</h1>
-    <p>The Empire of Limitless Digital Power</p>
-  </section>
-
-  <section id="about" class="section-light">
-    <h1>About CX Universe</h1>
-    <p>CX Universe is a digital empire built on AI, Crypto, and Future Technologies. Our mission is to create tools, bots, and platforms that change the digital world forever.</p>
-  </section>
-
-  <section id="services" class="section-dark">
-    <h1>Our Services</h1>
-    <p>We offer AI-powered services, crypto trading bots, digital automation tools, and advanced solutions for modern businesses and creators.</p>
-  </section>
-
-  <section id="contact" class="section-light">
-    <h1>Contact Us</h1>
-    <p>Email: cxuniverse@protonmail.com<br />Instagram: @cxuniverse<br />GitHub: github.com/cxuniverse</p>
-  </section>
-
+  <h1>Welcome to CX Universe</h1>
+  <p>The Empire of Limitless Digital Power</p>
+  <div class="nav">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <!-- <a href="contact.html">Contact</a> -->
+  </div>
 </body>
 </html>
+
 
 
