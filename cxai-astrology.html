@@ -8,11 +8,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #000;
+      background: #121212;
       color: #fff;
+      line-height: 1.6;
     }
     header {
-      background: #121212;
+      background: #1c1c1c;
       padding: 20px 50px;
       display: flex;
       justify-content: space-between;
@@ -20,7 +21,7 @@
       border-bottom: 1px solid #333;
     }
     .logo {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
       color: #00ffee;
       text-shadow: 0 0 10px #00ffee;
@@ -39,16 +40,47 @@
       padding: 60px 30px;
       max-width: 1200px;
       margin: auto;
+      text-align: center;
     }
     h1 {
-      text-align: center;
-      font-size: 42px;
-      margin-bottom: 40px;
+      font-size: 48px;
       color: #00ffee;
-      text-shadow: 0 0 10px #00ffee;
+      text-shadow: 0 0 15px #00ffee;
+      margin-bottom: 30px;
     }
-    .content {
-      text-align: center;
+    .intro-text {
+      font-size: 20px;
+      color: #ddd;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    .services-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .service-card {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+    .service-card h3 {
+      color: #00ffee;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .service-card p {
+      font-size: 18px;
+      color: #bbb;
     }
     footer {
       text-align: center;
@@ -72,13 +104,29 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="services.html">Services</a>
     </nav>
   </header>
 
   <div class="container">
     <h1>AI Astrology</h1>
-    <div class="content">
-      <p>We provide AI-powered astrology services that analyze your horoscope and guide you with predictions based on the stars and planets.</p>
+    <p class="intro-text">
+      AI-powered astrology provides personalized insights based on your birth chart, planetary positions, and astrological calculations, helping you make data-driven decisions for your life and business.
+    </p>
+
+    <div class="services-box">
+      <div class="service-card">
+        <h3>Horoscope Analysis</h3>
+        <p>Get your detailed horoscope analysis powered by AI, offering insights into your life's journey and challenges.</p>
+      </div>
+      <div class="service-card">
+        <h3>Personalized Predictions</h3>
+        <p>Receive tailored predictions for health, career, relationships, and finance based on astrological data and AI algorithms.</p>
+      </div>
+      <div class="service-card">
+        <h3>Astrological Compatibility</h3>
+        <p>Find your ideal partners and friends using AI-based compatibility analysis from astrology charts.</p>
+      </div>
     </div>
   </div>
 
@@ -88,3 +136,4 @@
 
 </body>
 </html>
+
