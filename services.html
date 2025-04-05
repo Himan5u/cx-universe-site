@@ -79,6 +79,12 @@
       color: #00ffee;
     }
 
+    .service p {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -92,6 +98,35 @@
       color: #00ffee;
       font-weight: bold;
       text-shadow: 0 0 10px #00ffee;
+    }
+
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 30px 15px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service h3 {
+        font-size: 18px;
+      }
+
+      .service p {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -108,54 +143,94 @@
   <div class="container">
     <h1>Our AI-Powered Services</h1>
     <div class="grid">
-      <div class="service"><h3>AI Policy Making</h3></div>
-      <div class="service"><h3>AI Law & Compliance</h3></div>
-      <div class="service"><h3>AI Ecommerce Solutions</h3></div>
-      <div class="service"><h3>AI Astrology Reports</h3></div>
-      <div class="service"><h3>AI-Powered Education Tools</h3></div>
-      <div class="service"><h3>AI Resume Builder</h3></div>
-      <div class="service"><h3>AI Trading Bots</h3></div>
-      <div class="service"><h3>AI Voice Cloning</h3></div>
-      <div class="service"><h3>AI Content Creation</h3></div>
-      <div class="service"><h3>AI Chatbots for Business</h3></div>
-      <div class="service"><h3>AI Health Prediction</h3></div>
-      <div class="service"><h3>AI Image Generation</h3></div>
-      <div class="service"><h3>AI Video Editing</h3></div>
-      <div class="service"><h3>AI Customer Support</h3></div>
-      <div class="service"><h3>AI Digital Marketing</h3></div>
-      <div class="service"><h3>AI Code Generation</h3></div>
-      <div class="service"><h3>AI SEO Tools</h3></div>
-      <div class="service"><h3>AI Email Writer</h3></div>
-      <div class="service"><h3>AI Meme Generator</h3></div>
-      <div class="service"><h3>AI Music Composer</h3></div>
-      <div class="service"><h3>AI Face Swapping</h3></div>
-      <div class="service"><h3>AI Game Development</h3></div>
-      <div class="service"><h3>AI Startup Idea Generator</h3></div>
-      <div class="service"><h3>AI Legal Document Generator</h3></div>
-      <div class="service"><h3>AI Storytelling</h3></div>
-      <div class="service"><h3>AI Job Interview Prep</h3></div>
-      <div class="service"><h3>AI Logo Generator</h3></div>
-      <div class="service"><h3>AI Web Design</h3></div>
-      <div class="service"><h3>AI Ad Copywriting</h3></div>
-      <div class="service"><h3>AI Product Description Generator</h3></div>
-      <div class="service"><h3>AI HR Assistant</h3></div>
-      <div class="service"><h3>AI Financial Planning</h3></div>
-      <div class="service"><h3>AI Business Naming</h3></div>
-      <div class="service"><h3>AI Resume Analyzer</h3></div>
-      <div class="service"><h3>AI Daily Planner</h3></div>
-      <div class="service"><h3>AI News Summarizer</h3></div>
-      <div class="service"><h3>AI Caption Creator</h3></div>
-      <div class="service"><h3>AI Instagram Manager</h3></div>
-      <div class="service"><h3>AI Influencer Bot</h3></div>
-      <div class="service"><h3>AI Presentation Generator</h3></div>
-      <div class="service"><h3>AI Research Assistant</h3></div>
-      <div class="service"><h3>AI CV Optimizer</h3></div>
-      <div class="service"><h3>AI Wedding Planning</h3></div>
-      <div class="service"><h3>AI Branding Strategy</h3></div>
-      <div class="service"><h3>AI UX Researcher</h3></div>
-      <div class="service"><h3>AI Virtual Assistant</h3></div>
-      <div class="service"><h3>AI SMS Campaigns</h3></div>
-      <div class="service"><h3>AI Email Campaigns</h3></div>
+      <div class="service">
+        <h3>AI Policy Making</h3>
+        <p>We help businesses create robust AI policies that align with global regulations and best practices.</p>
+      </div>
+      <div class="service">
+        <h3>AI Law & Compliance</h3>
+        <p>Our AI solutions ensure your business adheres to all legal requirements and maintains compliance.</p>
+      </div>
+      <div class="service">
+        <h3>AI Ecommerce Solutions</h3>
+        <p>Boost your online store with AI-powered tools that optimize sales, inventory, and customer engagement.</p>
+      </div>
+      <div class="service">
+        <h3>AI Astrology Reports</h3>
+        <p>Get AI-generated astrology reports personalized to your birth chart and life patterns.</p>
+      </div>
+      <div class="service">
+        <h3>AI-Powered Education Tools</h3>
+        <p>Enhance learning experiences with AI-powered tutors and content creation tools.</p>
+      </div>
+      <div class="service">
+        <h3>AI Resume Builder</h3>
+        <p>Generate professional resumes with AI-based templates and personalized suggestions.</p>
+      </div>
+      <div class="service">
+        <h3>AI Trading Bots</h3>
+        <p>Automate your crypto trading with intelligent AI bots that adapt to market trends.</p>
+      </div>
+      <div class="service">
+        <h3>AI Voice Cloning</h3>
+        <p>Create realistic voice clones for any purpose—be it content creation or customer support.</p>
+      </div>
+      <div class="service">
+        <h3>AI Content Creation</h3>
+        <p>Generate high-quality articles, blogs, and content for your brand or business using AI.</p>
+      </div>
+      <div class="service">
+        <h3>AI Chatbots for Business</h3>
+        <p>Automate customer interactions with intelligent chatbots designed to boost sales and customer satisfaction.</p>
+      </div>
+      <div class="service">
+        <h3>AI Health Prediction</h3>
+        <p>Get AI-driven insights into your health risks and prevent future illnesses with personalized reports.</p>
+      </div>
+      <div class="service">
+        <h3>AI Image Generation</h3>
+        <p>Create stunning, high-quality images using AI tools that generate visuals based on your description.</p>
+      </div>
+      <div class="service">
+        <h3>AI Video Editing</h3>
+        <p>Edit videos automatically with AI tools that can enhance quality and create stunning edits.</p>
+      </div>
+      <div class="service">
+        <h3>AI Customer Support</h3>
+        <p>Provide instant customer support through AI-driven virtual assistants.</p>
+      </div>
+      <div class="service">
+        <h3>AI Digital Marketing</h3>
+        <p>Transform your marketing campaigns using AI to optimize ads, targeting, and customer engagement.</p>
+      </div>
+      <div class="service">
+        <h3>AI Code Generation</h3>
+        <p>Write code automatically using AI tools, saving time and effort in software development.</p>
+      </div>
+      <div class="service">
+        <h3>AI SEO Tools</h3>
+        <p>Optimize your website for search engines using AI-powered tools that increase rankings and traffic.</p>
+      </div>
+      <div class="service">
+        <h3>AI Email Writer</h3>
+        <p>Generate effective email copy with AI-driven suggestions to boost open rates and conversions.</p>
+      </div>
+      <div class="service">
+        <h3>AI Meme Generator</h3>
+        <p>Create viral memes using AI to produce engaging content for social media.</p>
+      </div>
+      <div class="service">
+        <h3>AI Music Composer</h3>
+        <p>Generate original music with AI-based tools that adapt to your style and preferences.</p>
+      </div>
+      <div class="service">
+        <h3>AI Face Swapping</h3>
+        <p>Swap faces in photos or videos using AI technology with stunning realism.</p>
+      </div>
+      <div class="service">
+        <h3>AI Game Development</h3>
+        <p>Build your own AI-powered games that evolve based on player interactions and behaviors.</p>
+      </div>
     </div>
   </div>
 
@@ -165,4 +240,3 @@
 
 </body>
 </html>
-
