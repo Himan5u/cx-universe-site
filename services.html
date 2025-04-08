@@ -3,248 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CX Universe - Services</title>
+  <title>CX Universe - AI Skills</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #00ffff;
+      padding: 20px;
     }
-
-    header {
-      background: #121212;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #333;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #00ffee;
-      text-shadow: 0 0 10px #00ffee;
-    }
-
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #ccc;
-      font-size: 18px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #00ffee;
-    }
-
-    .container {
-      padding: 60px 30px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
     h1 {
       text-align: center;
-      font-size: 42px;
-      margin-bottom: 40px;
-      color: #00ffee;
-      text-shadow: 0 0 10px #00ffee;
+      color: #00ffff;
+      font-size: 2.5rem;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .service {
-      background: #111;
+    .skill-card {
+      background-color: #1a1a1a;
+      border: 1px solid #00ffff30;
+      border-radius: 15px;
       padding: 20px;
-      border-radius: 12px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #222;
+      margin: 20px 0;
+      box-shadow: 0 0 10px #00ffff40;
     }
-
-    .service:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #00ffee88;
+    .skill-card h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
     }
-
-    .service h3 {
-      margin: 0;
-      font-size: 20px;
-      color: #00ffee;
+    .skill-card ul {
+      margin: 10px 0;
+      padding-left: 20px;
     }
-
-    .service p {
-      font-size: 14px;
-      color: #ccc;
-      margin-top: 10px;
+    .skill-card p {
+      color: #ffffffcc;
     }
-
     footer {
       text-align: center;
-      padding: 30px;
-      background: #111;
-      color: #888;
-      font-size: 16px;
-      margin-top: 60px;
-    }
-
-    footer span {
-      color: #00ffee;
-      font-weight: bold;
-      text-shadow: 0 0 10px #00ffee;
-    }
-
-    /* Mobile Responsiveness */
-    @media screen and (max-width: 768px) {
-      .container {
-        padding: 30px 15px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .service h3 {
-        font-size: 18px;
-      }
-
-      .service p {
-        font-size: 12px;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      padding: 20px;
+      color: #00ffff90;
     }
   </style>
 </head>
 <body>
+  <h1>Our Real AI-Powered Skills</h1>
 
-  <header>
-    <div class="logo">CX Universe</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+  <div class="skill-card">
+    <h2>🧠 Mind Reading with AI Psychology</h2>
+    <p>Decode thoughts, feelings, and truth using AI-backed psychological analysis and micro-expression reading.</p>
+    <ul>
+      <li>Detect lies and intentions</li>
+      <li>Use NLP to guide conversations</li>
+      <li>Read facial cues, tone, and gestures</li>
+    </ul>
+    <p><strong>Use Case:</strong> Sales, Negotiation, Leadership</p>
+  </div>
 
-  <div class="container">
-    <h1>Our AI-Powered Services</h1>
-    <div class="grid">
-     <div class="service">
-  <a href="cxai-policy-making.html">
-    <h3>CXAI Policy Making</h3>
-  </a>
-  <p>We help businesses create robust AI policies that align with global regulations and best practices.</p>
-      </div>
-      <div class="service">
-  <a href="cxai-law-compliance.html">
-        <h3>AI Law & Compliance</h3>
-  </a>
-  <p>Our AI solutions ensure your business adheres to all legal requirements and maintains compliance.</p>
-      </div>
-      <div class="service">
-  <a href="cxai-ecommerce-solutions.html">
-        <h3>AI Ecommerce Solutions</h3> 
-  </a>
-        <p>Boost your online store with AI-powered tools that optimize sales, inventory, and customer engagement.</p>
-      </div>
-      <div class="service">
-  <a href="cxai-astrology.html">
-        <h3>AI Astrology Reports</h3>
-  </a>
-        <p>Get AI-generated astrology reports personalized to your birth chart and life patterns.</p>
-      </div>
-      <div class="service">
-        <h3>AI-Powered Education Tools</h3>
-        <p>Enhance learning experiences with AI-powered tutors and content creation tools.</p>
-      </div>
-      <div class="service">
-        <h3>AI Resume Builder</h3>
-        <p>Generate professional resumes with AI-based templates and personalized suggestions.</p>
-      </div>
-      <div class="service">
-        <h3>AI Trading Bots</h3>
-        <p>Automate your crypto trading with intelligent AI bots that adapt to market trends.</p>
-      </div>
-      <div class="service">
-        <h3>AI Voice Cloning</h3>
-        <p>Create realistic voice clones for any purpose—be it content creation or customer support.</p>
-      </div>
-      <div class="service">
-        <h3>AI Content Creation</h3>
-        <p>Generate high-quality articles, blogs, and content for your brand or business using AI.</p>
-      </div>
-      <div class="service">
-        <h3>AI Chatbots for Business</h3>
-        <p>Automate customer interactions with intelligent chatbots designed to boost sales and customer satisfaction.</p>
-      </div>
-      <div class="service">
-        <h3>AI Health Prediction</h3>
-        <p>Get AI-driven insights into your health risks and prevent future illnesses with personalized reports.</p>
-      </div>
-      <div class="service">
-        <h3>AI Image Generation</h3>
-        <p>Create stunning, high-quality images using AI tools that generate visuals based on your description.</p>
-      </div>
-      <div class="service">
-        <h3>AI Video Editing</h3>
-        <p>Edit videos automatically with AI tools that can enhance quality and create stunning edits.</p>
-      </div>
-      <div class="service">
-        <h3>AI Customer Support</h3>
-        <p>Provide instant customer support through AI-driven virtual assistants.</p>
-      </div>
-      <div class="service">
-        <h3>AI Digital Marketing</h3>
-        <p>Transform your marketing campaigns using AI to optimize ads, targeting, and customer engagement.</p>
-      </div>
-      <div class="service">
-        <h3>AI Code Generation</h3>
-        <p>Write code automatically using AI tools, saving time and effort in software development.</p>
-      </div>
-      <div class="service">
-        <h3>AI SEO Tools</h3>
-        <p>Optimize your website for search engines using AI-powered tools that increase rankings and traffic.</p>
-      </div>
-      <div class="service">
-        <h3>AI Email Writer</h3>
-        <p>Generate effective email copy with AI-driven suggestions to boost open rates and conversions.</p>
-      </div>
-      <div class="service">
-        <h3>AI Meme Generator</h3>
-        <p>Create viral memes using AI to produce engaging content for social media.</p>
-      </div>
-      <div class="service">
-        <h3>AI Music Composer</h3>
-        <p>Generate original music with AI-based tools that adapt to your style and preferences.</p>
-      </div>
-      <div class="service">
-        <h3>AI Face Swapping</h3>
-        <p>Swap faces in photos or videos using AI technology with stunning realism.</p>
-      </div>
-      <div class="service">
-        <h3>AI Game Development</h3>
-        <p>Build your own AI-powered games that evolve based on player interactions and behaviors.</p>
-      </div>
-    </div>
+  <div class="skill-card">
+    <h2>🧩 Prompt Engineering Secrets</h2>
+    <p>Craft powerful prompts that make AI respond with perfect results every time.</p>
+    <ul>
+      <li>Master ChatGPT, Midjourney, Gemini etc.</li>
+      <li>Create tools using just prompts</li>
+      <li>Boost AI accuracy & creativity</li>
+    </ul>
+    <p><strong>Use Case:</strong> Content, Automation, Tools</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>📈 Viral AI Content Strategy</h2>
+    <p>Create Instagram, YouTube, and Twitter content using AI that actually goes viral.</p>
+    <ul>
+      <li>Hook psychology + viral formula</li>
+      <li>Use AI to script, edit & post</li>
+      <li>Real-time trend hacking</li>
+    </ul>
+    <p><strong>Use Case:</strong> Influencers, Startups</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>🎨 AI Branding Hacks</h2>
+    <p>Design logos, color schemes, websites, and brand names using AI tools like Leonardo, Canva AI & more.</p>
+    <ul>
+      <li>Instant logo & name generators</li>
+      <li>Brand storytelling using GPT</li>
+      <li>Visual identity creation</li>
+    </ul>
+    <p><strong>Use Case:</strong> Personal Brands, Freelancers</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>🧠 Memory Hacking Techniques</h2>
+    <p>Learn how to remember anything using AI flashcards and brain-based memory systems.</p>
+    <ul>
+      <li>AI-powered mind maps</li>
+      <li>Spaced repetition techniques</li>
+      <li>Study like a genius</li>
+    </ul>
+    <p><strong>Use Case:</strong> Students, Learners</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>📄 AI Resume Mastery</h2>
+    <p>Build professional resumes using AI that get 3x more interview calls.</p>
+    <ul>
+      <li>AI-based keyword optimization</li>
+      <li>ATS-friendly formats</li>
+      <li>Personalized suggestions</li>
+    </ul>
+    <p><strong>Use Case:</strong> Job Seekers</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>⚡ Energy & Confidence Control</h2>
+    <p>Rewire your inner voice using AI affirmation and confidence-boosting systems.</p>
+    <ul>
+      <li>Daily AI voice boosts</li>
+      <li>Visualization tools</li>
+      <li>Control anxiety like a boss</li>
+    </ul>
+    <p><strong>Use Case:</strong> Public Speaking, Confidence</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>🎯 ChatGPT Prompt Mastery</h2>
+    <p>Use ChatGPT for content, code, business, and productivity like a pro.</p>
+    <ul>
+      <li>Prompt recipes for every task</li>
+      <li>Build tools using ChatGPT</li>
+      <li>Save hours daily</li>
+    </ul>
+    <p><strong>Use Case:</strong> Students, Solopreneurs</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>⏳ Productivity Using AI Tools</h2>
+    <p>Automate tasks, manage time, and run your digital life using top AI tools.</p>
+    <ul>
+      <li>Task automation with Zapier, Notion AI</li>
+      <li>Smart scheduling systems</li>
+      <li>Focus and discipline hacks</li>
+    </ul>
+    <p><strong>Use Case:</strong> Busy Professionals</p>
+  </div>
+
+  <div class="skill-card">
+    <h2>🕵️‍♂️ Body Language Decoding</h2>
+    <p>Read anyone’s body language with deep precision using AI-analyzed gestures.</p>
+    <ul>
+      <li>Posture, hand & eye reading</li>
+      <li>Deception detection</li>
+      <li>Instant trust signals</li>
+    </ul>
+    <p><strong>Use Case:</strong> Sales, Psychology, Relationships</p>
   </div>
 
   <footer>
-    Powered by <span>CX Universe 🚀</span>
+    Powered by <strong>🌌 CX Universe</strong>
   </footer>
-
 </body>
 </html>
+
